@@ -1,4 +1,3 @@
-// filename: sessions.json
 [
   { "date": "2025-11-20", "title": "Google Analytics Alternative using Umami", "speaker": "Mirza" },
   { "date": "2025-11-27", "title": "Azure AI Services Overview", "speaker": "Saufi" },
