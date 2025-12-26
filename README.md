@@ -1,25 +1,24 @@
-<!-- filename: README.md -->
+// filename: README.md
 # TechTalk – Weekly Session for Knowledge Sharing
 
-A static site hosted on GitHub Pages to list upcoming TechTalk topics.
+Static site auto-published via GitHub Pages using GitHub Actions. Update `sessions.json` and push to `main`; CI deploys automatically.
 
-## Deploy
+## Setup
 
-1. Create a new public repo on GitHub (e.g., `techtalk`).
-2. Add `index.html` (from this project) to the repo and commit.
-3. In GitHub:
-   - Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `main` (or `gh-pages`) and folder `/root`
-4. Wait for the page to build. Your site will be live at:
+1. Create a public repo (e.g., `techtalk`).
+2. Add these files: `index.html`, `sessions.json`, `.github/workflows/deploy.yml`.
+3. Push to `main`.
+4. In GitHub:
+   - Settings → Pages → Build and deployment → Source: GitHub Actions.
+5. Wait for the workflow to finish; your site will be live at:
    `https://<your-username>.github.io/<repo-name>/`
 
-## Update sessions
+## Updating sessions
 
-Open `index.html` and edit the `sessions` array:
+Edit `sessions.json` and push:
 
-```js
-const sessions = [
-  { date: "2026-01-08", title: "Intro to TDD", speaker: "Your Name" },
-  { date: "2026-01-15", title: "GraphQL in Practice", speaker: "Your Name" }
-];
+```json
+[
+  { "date": "2026-01-08", "title": "Intro to TDD", "speaker": "Khairul Ikhwan" },
+  { "date": "2026-01-15", "title": "GraphQL in Practice", "speaker": "Saufi" }
+]
