@@ -1,4 +1,3 @@
-// filename: .github/workflows/deploy.yml
 name: Deploy TechTalk to GitHub Pages
 
 on:
