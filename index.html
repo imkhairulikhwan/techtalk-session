@@ -1,4 +1,4 @@
-<!-- filename: index.html -->
+// filename: index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,120 +7,32 @@
   <title>[TechTalk] Weekly Session for Knowledge Sharing</title>
   <meta name="description" content="Weekly TechTalk sessions for Software Engineering knowledge sharing." />
   <style>
-    /* Basic, accessible styling focused on readability */
     :root {
       --bg: #ffffff;
       --text: #1b1b1b;
       --muted: #4b4b4b;
       --primary: #0b5fff;
-      --accent: #0ea5e9;
       --border: #e5e7eb;
       --highlight-bg: #f0f7ff;
       --highlight-border: #cfe3ff;
       --card-bg: #fafafa;
     }
-
-    html, body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 840px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    header {
-      margin-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 12px;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      margin: 0 0 6px;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 0;
-    }
-
-    .notice {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-      margin: 18px 0;
-    }
-
-    .intro {
-      margin: 18px 0;
-      font-size: 1rem;
-    }
-
-    .highlight {
-      border: 1px solid var(--highlight-border);
-      background: var(--highlight-bg);
-      border-radius: 10px;
-      padding: 16px;
-      margin: 18px 0;
-    }
-
-    .highlight h2 {
-      margin-top: 0;
-    }
-
-    .session-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .session-item {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px;
-      margin: 10px 0;
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 12px;
-      align-items: start;
-      background: var(--bg);
-    }
-
-    .session-date {
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .session-title {
-      margin: 0;
-      font-weight: 600;
-    }
-
-    .session-speaker {
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    .footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 560px) {
-      .session-item {
-        grid-template-columns: 1fr;
-      }
-    }
+    html, body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; margin: 0; padding: 0; }
+    .container { max-width: 840px; margin: 0 auto; padding: 24px; }
+    header { margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    h1 { font-size: 1.8rem; margin: 0 0 6px; }
+    .subtitle { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    .notice { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin: 18px 0; }
+    .intro { margin: 18px 0; font-size: 1rem; }
+    .highlight { border: 1px solid var(--highlight-border); background: var(--highlight-bg); border-radius: 10px; padding: 16px; margin: 18px 0; }
+    .highlight h2 { margin-top: 0; }
+    .session-list { list-style: none; padding: 0; margin: 0; }
+    .session-item { border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin: 10px 0; display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: start; background: var(--bg); }
+    .session-date { font-weight: 600; color: var(--primary); }
+    .session-title { margin: 0; font-weight: 600; }
+    .session-speaker { color: var(--muted); margin-top: 4px; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 0.95rem; }
+    @media (max-width: 560px) { .session-item { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -143,9 +55,7 @@
 
     <section id="next-session" class="highlight" aria-live="polite">
       <h2>Next Session</h2>
-      <div id="next-session-content">
-        <p>Loading next session…</p>
-      </div>
+      <div id="next-session-content"><p>Loading next session…</p></div>
     </section>
 
     <section aria-label="upcoming-sessions">
@@ -154,110 +64,91 @@
     </section>
 
     <section class="footer" aria-label="footer">
-      <p>Hosted on GitHub Pages. To update, edit the sessions in this file and push.</p>
+      <p>Hosted on GitHub Pages. Update sessions via <code>sessions.json</code>. Changes auto-deploy.</p>
     </section>
   </main>
 
   <script>
-    // Configuration: sessions data. Keep ISO dates for robust parsing.
-    // Note: These are 2025 dates (adjust as needed). If your original list was for 2024, update years accordingly.
-    const sessions = [
-      { date: "2025-11-20", title: "Google Analytics Alternative using Umami", speaker: "Mirza" },
-      { date: "2025-11-27", title: "Azure AI Services Overview", speaker: "Saufi" },
-      { date: "2025-12-04", title: "Discover the Beauty of Code with Creative Coding", speaker: "Wan Arif" },
-      { date: "2025-12-11", title: "Automation Testing - Using Playwright and MCP Server", speaker: "Amylia" },
-      { date: "2025-12-18", title: "AI-Driven Work Item to Pull Request Automation", speaker: "Usamah" },
-      { date: "2025-12-24", title: "From Cloud to Browser: Local LLM with Transformer.js", speaker: "Yussof" }
-    ];
+    async function loadSessions() {
+      const container = document.getElementById("sessions");
+      const nextContainer = document.getElementById("next-session-content");
+      try {
+        const res = await fetch("./sessions.json", { cache: "no-cache" });
+        if (!res.ok) throw new Error("Failed to load sessions.json: " + res.status);
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error("sessions.json must be an array");
+        const sessions = data
+          .filter(s => s && typeof s.date === "string" && typeof s.title === "string" && typeof s.speaker === "string")
+          .map(s => ({ ...s, d: new Date(s.date + "T00:00:00") }))
+          .sort((a, b) => a.d - b.d);
 
-    // Utility: format date nicely (e.g., 20 Nov)
-    function formatDate(dateStr) {
-      const d = new Date(dateStr + "T00:00:00");
-      const opts = { day: "numeric", month: "long", year: "numeric" };
-      return d.toLocaleDateString(undefined, opts);
-    }
+        // Render list
+        container.innerHTML = "";
+        for (const s of sessions) {
+          const li = document.createElement("li");
+          li.className = "session-item";
 
-    // Render sessions sorted ascending by date
-    function renderSessions() {
-      const listEl = document.getElementById("sessions");
-      listEl.innerHTML = "";
+          const date = document.createElement("div");
+          date.className = "session-date";
+          date.textContent = formatDate(s.d);
 
-      const sorted = [...sessions].sort((a, b) => new Date(a.date) - new Date(b.date));
-      for (const s of sorted) {
-        const li = document.createElement("li");
-        li.className = "session-item";
+          const details = document.createElement("div");
+          const title = document.createElement("p");
+          title.className = "session-title";
+          title.textContent = s.title;
 
-        const date = document.createElement("div");
-        date.className = "session-date";
-        date.textContent = formatDate(s.date);
+          const speaker = document.createElement("p");
+          speaker.className = "session-speaker";
+          speaker.textContent = "by " + s.speaker;
 
-        const details = document.createElement("div");
-        const title = document.createElement("p");
-        title.className = "session-title";
-        title.textContent = s.title;
+          details.appendChild(title);
+          details.appendChild(speaker);
+          li.appendChild(date);
+          li.appendChild(details);
+          container.appendChild(li);
+        }
 
-        const speaker = document.createElement("p");
-        speaker.className = "session-speaker";
-        speaker.textContent = "by " + s.speaker;
+        // Render next session
+        const now = new Date();
+        const todayMidnight = new Date(now.toDateString());
+        const upcoming = sessions.filter(s => s.d >= todayMidnight);
+        nextContainer.innerHTML = "";
+        if (upcoming.length === 0) {
+          nextContainer.innerHTML = "<p>No upcoming sessions scheduled. Check back soon!</p>";
+        } else {
+          const next = upcoming[0];
+          const dateEl = document.createElement("p");
+          dateEl.innerHTML = "<strong>" + formatDate(next.d) + "</strong>";
+          const titleEl = document.createElement("p");
+          titleEl.textContent = next.title;
+          const speakerEl = document.createElement("p");
+          speakerEl.textContent = "by " + next.speaker;
 
-        details.appendChild(title);
-        details.appendChild(speaker);
+          const thursdayNote = document.createElement("p");
+          thursdayNote.style.color = "#4b4b4b";
+          thursdayNote.style.marginTop = "8px";
+          const weekday = next.d.getDay(); // 4 = Thursday
+          thursdayNote.textContent = (weekday !== 4)
+            ? "Note: Sessions are typically on Thursday, but this one is scheduled differently."
+            : "Sessions are typically on Thursday.";
 
-        li.appendChild(date);
-        li.appendChild(details);
-
-        listEl.appendChild(li);
+          nextContainer.appendChild(dateEl);
+          nextContainer.appendChild(titleEl);
+          nextContainer.appendChild(speakerEl);
+          nextContainer.appendChild(thursdayNote);
+        }
+      } catch (err) {
+        console.error(err);
+        nextContainer.innerHTML = "<p>Unable to load sessions right now.</p>";
+        container.innerHTML = "<li class='session-item'><div class='session-date'>Error</div><div><p class='session-title'>Failed to load sessions.json</p><p class='session-speaker'>Please try again later.</p></div></li>";
       }
     }
 
-    // Determine and render next upcoming session based on current date
-    function renderNextSession() {
-      const now = new Date();
-      // Consider "upcoming" as sessions whose date is >= today
-      const upcoming = sessions
-        .map(s => ({ ...s, d: new Date(s.date + "T00:00:00") }))
-        .filter(s => s.d >= new Date(now.toDateString())) // midnight boundary
-        .sort((a, b) => a.d - b.d);
-
-      const container = document.getElementById("next-session-content");
-      container.innerHTML = "";
-
-      if (upcoming.length === 0) {
-        container.innerHTML = "<p>No upcoming sessions scheduled. Check back soon!</p>";
-        return;
-      }
-
-      const next = upcoming[0];
-      const dateEl = document.createElement("p");
-      dateEl.innerHTML = "<strong>" + formatDate(next.date) + "</strong>";
-
-      const titleEl = document.createElement("p");
-      titleEl.textContent = next.title;
-
-      const speakerEl = document.createElement("p");
-      speakerEl.textContent = "by " + next.speaker;
-
-      const thursdayNote = document.createElement("p");
-      thursdayNote.style.color = "#4b4b4b";
-      thursdayNote.style.marginTop = "8px";
-
-      // Mention Thursday default. If the date is not Thursday, add a note.
-      const weekday = new Date(next.date + "T00:00:00").getDay(); // 4 = Thursday
-      if (weekday !== 4) {
-        thursdayNote.textContent = "Note: Sessions are typically on Thursday, but this one is scheduled differently.";
-      } else {
-        thursdayNote.textContent = "Sessions are typically on Thursday.";
-      }
-
-      container.appendChild(dateEl);
-      container.appendChild(titleEl);
-      container.appendChild(speakerEl);
-      container.appendChild(thursdayNote);
+    function formatDate(d) {
+      return d.toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" });
     }
 
-    // Initialize
-    renderSessions();
-    renderNextSession();
+    loadSessions();
   </script>
 </body>
 </html>
