@@ -1,4 +1,3 @@
-// filename: README.md
 # TechTalk – Weekly Session for Knowledge Sharing
 
 Static site auto-published via GitHub Pages using GitHub Actions. Update `sessions.json` and push to `main`; CI deploys automatically.
