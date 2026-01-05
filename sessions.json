@@ -5,5 +5,6 @@
   { "date": "2025-12-11", "title": "Automation Testing - Using Playwright and MCP Server", "speaker": "Amylia" },
   { "date": "2025-12-18", "title": "AI-Driven Work Item to Pull Request Automation", "speaker": "Usamah" },
   { "date": "2025-12-24", "title": "From Cloud to Browser: Local LLM with Transformer.js", "speaker": "Yussof" },
-  { "date": "2025-12-31", "title": "Building Efficient Search using ElasticSearch and NEST", "speaker": "Solehin" }
+  { "date": "2025-12-31", "title": "Building Efficient Search using ElasticSearch and NEST", "speaker": "Solehin" },
+  { "date": "2026-01-08", "title": "How to use Postman", "speaker": "Raymond" }
 ]
