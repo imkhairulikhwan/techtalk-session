@@ -9,8 +9,8 @@ Static site auto-published via GitHub Pages using GitHub Actions. Update `sessio
 3. Push to `main`.
 4. In GitHub:
    - Settings → Pages → Build and deployment → Source: GitHub Actions.
-5. Wait for the workflow to finish; your site will be live at:
-   `https://<your-username>.github.io/<repo-name>/`
+5. Wait for the workflow to finish; live URL:
+   `https://imkhairulikhwan.github.io/techtalk-session/`
 
 ## Updating sessions
 
