@@ -9,5 +9,7 @@
   { "date": "2026-01-08", "title": "How to use Postman", "speaker": "Raymond" },
   { "date": "2026-01-15", "title": "n8n Workflow Automation for Everyone", "speaker": "Raja Hazwan" },
   { "date": "2026-02-05", "title": "3D Web Fundamentals", "speaker": "Khairin Zulhizam" },
-  { "date": "2026-02-12", "title": "Implementing IoT Solutions for the Future of Energy in OG", "speaker": "Najah Tarmizi" }
+  { "date": "2026-02-12", "title": "Implementing IoT Solutions for the Future of Energy in OG", "speaker": "Najah Tarmizi" },
+ { "date": "2026-02-12", "title": "Best practices in Prompt Engineering", "speaker": "Afham Shahrir" },
+ { "date": "2026-02-12", "title": “Building Modern Apps with Cloudflare Serverless", "speaker": "Yazieq Suhaidin" }
 ]
