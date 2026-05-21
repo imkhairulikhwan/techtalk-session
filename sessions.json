@@ -13,5 +13,7 @@
  { "date": "2026-03-05", "title": "Best practices in Prompt Engineering", "speaker": "Afham Shahrir" },
  { "date": "2026-03-12", "title": "Building Modern Apps with Cloudflare Serverless", "speaker": "Yazieq Suhaidin" },
  { "date": "2026-04-30", "title": "Modernizing Deployment: From Manual SSH to Container-Based Automation", "speaker": "Hannan Yusop" },
-  { "date": "2026-05-15", "title": "Model Context Protocol — Claude Code + Azure DevOps", "speaker": "Farah Fatini" }
+  { "date": "2026-05-15", "title": "Model Context Protocol — Claude Code + Azure DevOps", "speaker": "Farah Fatini" },
+  { "date": "2026-05-21", "title": "TestRigor, Automation Testing Tool", "speaker": "Athirah Rosli" }
+  
 ]
