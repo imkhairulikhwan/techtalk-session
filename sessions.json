@@ -14,6 +14,10 @@
  { "date": "2026-03-12", "title": "Building Modern Apps with Cloudflare Serverless", "speaker": "Yazieq Suhaidin" },
  { "date": "2026-04-30", "title": "Modernizing Deployment: From Manual SSH to Container-Based Automation", "speaker": "Hannan Yusop" },
   { "date": "2026-05-15", "title": "Model Context Protocol — Claude Code + Azure DevOps", "speaker": "Farah Fatini" },
-  { "date": "2026-05-21", "title": "TestRigor, Automation Testing Tool", "speaker": "Athirah Rosli" }
-  
+  { "date": "2026-05-21", "title": "TestRigor, Automation Testing Tool", "speaker": "Athirah Rosli" },
+  { "date": "2026-06-11", "title": "Common design token categories", "speaker": "Sarah Yusof" },
+  { "date": "2026-06-11", "title": "SSE", "speaker": "Firdaus Zakaria" },
+  { "date": "2026-07-2", "title": "/teach skill", "speaker": "Farah Hariri" },
+  { "date": "2026-07-9", "title": "Astro - web framework", "speaker": "Adam Juhari" },
+  { "date": "2026-07-16", "title": "Modern File Upload Architecture", "speaker": "Roslan Bainal" }
 ]
