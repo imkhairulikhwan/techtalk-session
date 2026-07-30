@@ -17,7 +17,8 @@
   { "date": "2026-05-21", "title": "TestRigor, Automation Testing Tool", "speaker": "Athirah Rosli" },
   { "date": "2026-06-11", "title": "Common design token categories", "speaker": "Sarah Yusof" },
   { "date": "2026-06-11", "title": "SSE", "speaker": "Firdaus Zakaria" },
-  { "date": "2026-07-2", "title": "/teach skill", "speaker": "Farah Hariri" },
-  { "date": "2026-07-9", "title": "Astro - web framework", "speaker": "Adam Juhari" },
-  { "date": "2026-07-16", "title": "Modern File Upload Architecture", "speaker": "Roslan Bainal" }
+  { "date": "2026-07-02", "title": "/teach skill", "speaker": "Farah Hariri" },
+  { "date": "2026-07-09", "title": "Astro - web framework", "speaker": "Adam Juhari" },
+  { "date": "2026-07-16", "title": "Modern File Upload Architecture", "speaker": "Roslan Bainal" },
+  { "date": "2026-07-16", "title": "Code Quality with SonarQube", "speaker": "Yussof Hussin" }
 ]
